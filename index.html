@@ -27,11 +27,25 @@ mixpanel.init("d971f19f266f1bd5b09bef8c20354e1e");</script><!-- end Mixpanel -->
 (function(w,d,t,r,u,o,s,f){w[r]=w[r]||function(){(w._rq=w._rq||[]).push(Array.prototype.slice.call(arguments))} ;s=d.createElement(t),f=d.getElementsByTagName(t)[0];s.async=1;s.src=u;s.id='rtracker';s.setAttribute('data-organization-id',o); f.parentNode.insertBefore(s,f);})(window,document,'script','_route','//www.routecdn.com/tracker/route-tracker-min.js','55def780ab3e3a0c501b2cbb');
 </script>	
 <script src="//fast.eager.io/TpfLhDpGoU.js"></script>	
+	https://cdn.onesignal.com/sdks/OneSignalSDK.js
+	
 	
 	
 </head>
 
 <body>
+	
+	<a href="#" id="registerForPushLink">Subscribe to Notifications</a>  
+  <script>
+  OneSignal.push(function() {
+    function registerForPush(event) {
+      OneSignal.push(["registerForPushNotifications"]);
+      event.preventDefault();
+    }
+    document.getElementById("registerForPushLink").addEventListener('click', registerForPush, false);
+
+  });
+  </script>
 	
 	<div class="navbar navbar-fixed-top custom-theme">
 		<div class="navbar-inner">
