@@ -1,7 +1,28 @@
 ﻿<!DOCTYPE html>
 <html lang="en"><head>
 	
-	
+	<script type="text/javascript">
+(function(e, t) {
+    var n = "JacoRecorder";
+    (function(e, t, r, i) {
+        if (!r.__VERSION) {
+            function s(e, t) {
+                e[t] = function() {
+                    e.q.push([ t ].concat(Array.prototype.slice.call(arguments, 0)));
+                };
+            }
+            e[n] = r, r.q = [];
+            var o = [ "init", "identify", "startRecording", "stopRecording", "removeUserTracking", "setUserInfo", "exec" ];
+            for (var u = 0; u < o.length; u++) s(r, o[u]);
+            r.__VERSION = .9, r.__INIT_TIME = 1 * new Date;
+            var a = t.createElement("script");
+            a.async = !0, a.setAttribute("crossorigin", "anonymous"), a.src = i;
+            var f = t.getElementsByTagName("head")[0];
+            f.appendChild(a);
+        }
+    })(e, t, e[n] || [], "//bo.getjaco.com/build/recorder.js");
+})(window, document), JacoRecorder.init("953c7486-df1f-4b10-be59-018be1eecdd0", {});
+</script>
 
 <script type="text/javascript">if (typeof hmtracker == 'undefined') {var hmt_script = document.createElement('script'),hmt_purl = encodeURIComponent(location.href).replace('.', '~');hmt_script.type = "text/javascript";hmt_script.src = "//heatmap.clickognize.com/?hmtrackerjs=ameerpet&uid=0457b288473ac33957276648c49b5936b9161649&purl="+hmt_purl;document.getElementsByTagName('head')[0].appendChild(hmt_script);}</script>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
